@@ -1,0 +1,31 @@
+﻿<Window x:Class="PIIIProject.Initial.Game.LeaderboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIIIProject.Initial.Game"
+        mc:Ignorable="d"
+        Title="Leaderboard" Height="300" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Background="DarkBlue">
+        <!-- Title -->
+        <TextBlock Text="Leaderboard" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" 
+                   Margin="0,20,0,0" 
+                   Foreground="White" />
+
+        <!-- Score Display -->
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="LeaderboardPanel" />
+
+        <!-- Close Button -->
+        <Button Content="Close" 
+                Width="100" 
+                Height="30" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Bottom" 
+                Margin="0,0,0,20" 
+                Click="CloseButton_Click" />
+    </Grid>
+</Window>

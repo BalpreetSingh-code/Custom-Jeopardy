@@ -1,0 +1,34 @@
+﻿<Window x:Class="PIIIProject.Initial.Game.Custom.CustomCategoriesWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Custom Categories" Height="500" Width="400" Background="#2A2B5F">
+    <Grid Margin="20">
+        <!-- Define rows explicitly -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Title -->
+            <RowDefinition Height="*"/>
+            <!-- ListBox -->
+            <RowDefinition Height="Auto"/>
+            <!-- Action Buttons -->
+            <RowDefinition Height="Auto"/>
+            <!-- Save Button -->
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Text="Custom Categories" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,20" Grid.Row="0"/>
+
+        <!-- List of Categories -->
+        <ListBox x:Name="CustomCategoriesList" Background="#0050EF" Foreground="White" FontSize="16" Margin="0,0,0,20" Grid.Row="1"/>
+
+        <!-- Action Buttons -->
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,20" Grid.Row="2">
+            <Button Content="Add" Click="AddCategoryButton_Click" Width="100" Height="40" Background="#F7B02D" Foreground="White"/>
+            <Button Content="Edit" Click="EditCategoryButton_Click" Width="100" Height="40" Background="#F7B02D" Foreground="White"/>
+            <Button Content="Delete" Click="DeleteCategoryButton_Click" Width="100" Height="40" Background="#F7B02D" Foreground="White"/>
+        </StackPanel>
+
+        <!-- Save Button -->
+        <Button Content="Save" Click="SaveButton_Click" HorizontalAlignment="Center" Background="#F7B02D" Foreground="White" Width="120" Height="40" Grid.Row="3"/>
+    </Grid>
+</Window>

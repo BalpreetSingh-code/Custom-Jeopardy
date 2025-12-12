@@ -1,0 +1,110 @@
+﻿<Window x:Class="PIIIProject.Initial.Game.QuestionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIIIProject.Initial.Game"
+        mc:Ignorable="d"
+        Title="Question" Height="500" Width="400" Background="#000080"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Border Background="White"
+                Width="350"
+                Height="400"
+                CornerRadius="10"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Question Area -->
+                    <RowDefinition Height="*"/>
+                    <!-- Answer Buttons -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Timer and Return Button -->
+                </Grid.RowDefinitions>
+
+                <!-- Question Text -->
+                <StackPanel Grid.Row="0">
+                    <TextBlock x:Name="QuestionText"
+                               Text="Placeholder Question"
+                               FontSize="20"
+                               FontWeight="Bold"
+                               HorizontalAlignment="Center"
+                               TextWrapping="Wrap"
+                               Margin="20,20,20,10" />
+                </StackPanel>
+
+                <!-- Answer Buttons -->
+                <Grid Grid.Row="1" Margin="10,0,10,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Button x:Name="AnswerButton1"
+                            Grid.Column="0" Grid.Row="0"
+                            Content="Answer 1"
+                            FontSize="16"
+                            Background="DeepSkyBlue"
+                            BorderThickness="0"
+                            Margin="5"
+                            Click="AnswerButton_Click" />
+                    <Button x:Name="AnswerButton2"
+                            Grid.Column="1" Grid.Row="0"
+                            Content="Answer 2"
+                            FontSize="16"
+                            Background="DeepSkyBlue"
+                            BorderThickness="0"
+                            Margin="5"
+                            Click="AnswerButton_Click" />
+                    <Button x:Name="AnswerButton3"
+                            Grid.Column="0" Grid.Row="1"
+                            Content="Answer 3"
+                            FontSize="16"
+                            Background="DeepSkyBlue"
+                            BorderThickness="0"
+                            Margin="5"
+                            Click="AnswerButton_Click" />
+                    <Button x:Name="AnswerButton4"
+                            Grid.Column="1" Grid.Row="1"
+                            Content="Answer 4"
+                            FontSize="16"
+                            Background="DeepSkyBlue"
+                            BorderThickness="0"
+                            Margin="5"
+                            Click="AnswerButton_Click" />
+                </Grid>
+
+                <!-- Timer and Return Button -->
+                <StackPanel Grid.Row="2" Orientation="Vertical" HorizontalAlignment="Center" Margin="0,10,0,20">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <TextBlock Text="Time Left:"
+                                   FontSize="14"
+                                   Foreground="Gray"
+                                   Margin="0,0,5,0"/>
+                        <TextBlock x:Name="TimerText"
+                                   Text="30"
+                                   FontSize="14"
+                                   Foreground="Black"/>
+                    </StackPanel>
+
+                    <Button x:Name="ReturnToBoardButton"
+                            Content="Return to Board"
+                            Visibility="Collapsed"
+                            FontSize="16"
+                            Background="#FFC864"
+                            Foreground="Black"
+                            Margin="10"
+                            Padding="5"
+                            HorizontalAlignment="Center"
+                            Click="ReturnToBoardButton_Click" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,211 @@
+{
+  "Player1Username": "Test",
+  "Player2Username": null,
+  "Player1Score": 0,
+  "Player2Score": 0,
+  "SelectedCategory": "Anime",
+  "CustomCategories": {
+    "Anime::Fate": [
+      {
+        "Text": "Which fate series was better",
+        "Answers": [
+          "Fate/Stay Night",
+          "Fate/Apocrypha",
+          "Fate/Zero",
+          "All Fate"
+        ],
+        "CorrectAnswerIndex": 3,
+        "PointValue": 200,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Who was archer in Fate/Zero",
+        "Answers": [
+          "Gilgamesh",
+          "Shiro",
+          "Archer of Red",
+          "Emiya"
+        ],
+        "CorrectAnswerIndex": 0,
+        "PointValue": 400,
+        "IsAnswered": false
+      },
+      {
+        "Text": "How many command seals do you get?",
+        "Answers": [
+          "1",
+          "3",
+          "4",
+          "As many as you want"
+        ],
+        "CorrectAnswerIndex": 1,
+        "PointValue": 600,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Who was the main bad guy",
+        "Answers": [
+          "Gilgamesh",
+          "Kirei Kotomine",
+          "Archer",
+          "Rin"
+        ],
+        "CorrectAnswerIndex": 1,
+        "PointValue": 800,
+        "IsAnswered": false
+      }
+    ],
+    "Anime::Anohana": [
+      {
+        "Text": "What was the main girls name",
+        "Answers": [
+          "Menma",
+          "Naruko",
+          "Haruna",
+          "Jintan"
+        ],
+        "CorrectAnswerIndex": 0,
+        "PointValue": 200,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Who could see the main girl",
+        "Answers": [
+          "Jintan",
+          "Naruko",
+          "Tetsudo",
+          "All of them"
+        ],
+        "CorrectAnswerIndex": 3,
+        "PointValue": 400,
+        "IsAnswered": false
+      },
+      {
+        "Text": "What was Jintans dads name",
+        "Answers": [
+          "Manabu",
+          "Atsushi",
+          "Satoshi",
+          "He didn\u0027t have a father"
+        ],
+        "CorrectAnswerIndex": 1,
+        "PointValue": 600,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Who loved Yukiatsu",
+        "Answers": [
+          "Naruko",
+          "Tsuruko",
+          "Haruna",
+          "Anjo"
+        ],
+        "CorrectAnswerIndex": 1,
+        "PointValue": 800,
+        "IsAnswered": false
+      }
+    ],
+    "Anime::Sword Art Online": [
+      {
+        "Text": "What was the main characters name",
+        "Answers": [
+          "Kirito",
+          "Ito",
+          "Kirigaya",
+          "All of them"
+        ],
+        "CorrectAnswerIndex": 3,
+        "PointValue": 200,
+        "IsAnswered": false
+      },
+      {
+        "Text": "What was Kiritos main ability",
+        "Answers": [
+          "Apocalypse",
+          "Slant",
+          "Starburst Stream",
+          "Flash step"
+        ],
+        "CorrectAnswerIndex": 2,
+        "PointValue": 400,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Who was yuna",
+        "Answers": [
+          "Dancer",
+          "Singer",
+          "Model",
+          "AI"
+        ],
+        "CorrectAnswerIndex": 1,
+        "PointValue": 600,
+        "IsAnswered": false
+      },
+      {
+        "Text": "What was asunas nickname",
+        "Answers": [
+          "The Flash",
+          "Red Lightning",
+          "Queen",
+          "Dancing Lilly"
+        ],
+        "CorrectAnswerIndex": 0,
+        "PointValue": 800,
+        "IsAnswered": false
+      }
+    ],
+    "Anime::Me": [
+      {
+        "Text": "Who\u0027s my favorite anime character",
+        "Answers": [
+          "Meliodas",
+          "Rin",
+          "Kirito",
+          "Asuna"
+        ],
+        "CorrectAnswerIndex": 0,
+        "PointValue": 200,
+        "IsAnswered": false
+      },
+      {
+        "Text": "My favorite anime",
+        "Answers": [
+          "One piece",
+          "Naruto",
+          "Bleach",
+          "Akame ga kill"
+        ],
+        "CorrectAnswerIndex": 2,
+        "PointValue": 400,
+        "IsAnswered": false
+      },
+      {
+        "Text": "Choose 1",
+        "Answers": [
+          "2",
+          "1",
+          "3",
+          "4"
+        ],
+        "CorrectAnswerIndex": 0,
+        "PointValue": 600,
+        "IsAnswered": false
+      },
+      {
+        "Text": "My favorite",
+        "Answers": [
+          "Rin",
+          "Asuna",
+          "Paola",
+          "Erin"
+        ],
+        "CorrectAnswerIndex": 3,
+        "PointValue": 800,
+        "IsAnswered": false
+      }
+    ]
+  },
+  "IsPlayer1Turn": true,
+  "SaveTimestamp": "2024-12-27T01:27:01.0539356-05:00"
+}

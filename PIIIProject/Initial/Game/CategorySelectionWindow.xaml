@@ -1,0 +1,57 @@
+﻿<Window x:Class="PIIIProject.Initial.Game.CategorySelectionWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Category Selection"
+        Height="450" Width="650" WindowStartupLocation="CenterScreen" Background="#191970">
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Title -->
+            <RowDefinition Height="Auto"/>
+            <!-- Buttons -->
+            <RowDefinition Height="*"/>
+            <!-- Scrollable content -->
+        </Grid.RowDefinitions>
+
+        <!-- Title Section -->
+        <Border Background="#FFC864" Padding="15" CornerRadius="10" Grid.Row="0">
+            <TextBlock x:Name="txtSelectCategory" Text="SELECT CATEGORY" FontSize="24" 
+                       HorizontalAlignment="Center" FontWeight="Bold" Foreground="Black"
+                       TextWrapping="Wrap" />
+        </Border>
+
+        <!-- Button Section -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0,10">
+            <!-- Add Custom Category Button -->
+            <Button Content="+ Add Custom Category"
+                    Padding="10,5"
+                    Margin="10,0"
+                    Background="#30AADD"
+                    Foreground="White"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    Click="AddCustomCategoryButton_Click" />
+
+            <!-- Load Game Button -->
+            <Button Content="Load Previous Game"
+                    Padding="10,5"
+                    Margin="10,0"
+                    Background="#30AADD"
+                    Foreground="White"
+                    FontSize="14"
+                    FontWeight="Bold"
+                    Click="LoadGameButton_Click" />
+        </StackPanel>
+
+        <!-- Scrollable Content -->
+        <ScrollViewer Grid.Row="2" VerticalScrollBarVisibility="Visible">
+            <Grid x:Name="CategoryGrid" Margin="10">
+                <!-- Dynamically populated -->
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</Window>

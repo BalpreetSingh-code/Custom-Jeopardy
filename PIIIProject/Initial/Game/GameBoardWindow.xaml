@@ -1,0 +1,71 @@
+﻿<Window x:Class="PIIIProject.Initial.Game.GameBoardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PIIIProject.Initial.Game"
+        mc:Ignorable="d"
+        Title="Jeopardy Game" Height="600" Width="800" Background="Black"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!-- Game Board Grid -->
+        <Grid x:Name="GameBoardGrid" Margin="10">
+            <!-- Row Definitions -->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <!-- Category Headers -->
+                <RowDefinition Height="*" />
+                <!-- Question Row 1 -->
+                <RowDefinition Height="*" />
+                <!-- Question Row 2 -->
+                <RowDefinition Height="*" />
+                <!-- Question Row 3 -->
+                <RowDefinition Height="*" />
+                <!-- Question Row 4 -->
+                <RowDefinition Height="Auto" />
+                <!-- Scoreboard and Save Button -->
+            </Grid.RowDefinitions>
+
+            <!-- Column Definitions -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!-- Scoreboard Section -->
+            <Grid Grid.Row="5" Grid.ColumnSpan="4" x:Name="ScoreboardGrid" Margin="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Player 1 Score -->
+                <Border x:Name="Player1Border" Grid.Column="0" Background="#000080" Padding="10" Margin="5">
+                    <TextBlock x:Name="Player1Score" Text="PLAYER 1" Foreground="LimeGreen" FontSize="20" FontWeight="Black" TextAlignment="Center" />
+                </Border>
+
+                <!-- Player 2 Score -->
+                <Border x:Name="Player2Border" Grid.Column="1" Background="#000080" Padding="10" Margin="5">
+                    <TextBlock x:Name="Player2Score" Text="PLAYER 2" Foreground="LimeGreen" FontSize="20" FontWeight="Black" TextAlignment="Center" />
+                </Border>
+
+                <!-- Save Game Button -->
+                <Button x:Name="SaveGameButton"
+                        Grid.Column="2"
+                        Content="Save Game"
+                        Background="#30AADD"
+                        Foreground="White"
+                        FontSize="14"
+                        FontWeight="Bold"
+                        Padding="10"
+                        Margin="5"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Click="SaveGameButton_Click" />
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>
